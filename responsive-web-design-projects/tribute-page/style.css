@@ -1,0 +1,90 @@
+body {
+  background-color: white;
+  padding: 0px 10px 10px;
+}
+
+#main {
+  font-family: monospace;
+  text-align: center; 
+  background-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.57); 
+}
+
+#tribute-info {
+  border-style: solid;
+  background-color: white;
+}
+
+#title {
+  text-decoration: underline;
+  padding-top: 15px; 
+  color: white;
+}
+
+#intro {
+  margin: 0 100px 15px;
+  font-size: 15px;
+  color: #F8F8F8;
+}
+
+#image {
+  max-width: 25%;  
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#img-caption {
+  margin: 15px 0 15px 0;
+  color: #F8F8F8;
+}
+
+h2 {
+  padding: 10px;
+}
+
+ul {
+  text-align: left;
+  padding-right: 15px
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+blockquote {
+  font-style: italic;
+  padding: 5px;
+  color: black;
+  background-color: #F8F8F8;
+}
+
+h3 {
+  text-align: left;
+  padding: 0 0 0 10px
+}
+
+footer {
+  background-color: black;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.57);
+  padding: 1px 10px;
+}
+
+@media screen and (max-width: 650px) {
+  body, #intro {
+    padding: 0;
+    margin: 0;
+  }
+  
+@media screen and (max-width: 650px) {
+  #title {
+    margin: 0;
+    padding-bottom: 15px;
+  }
+  
+@media screen and (max-width: 650px) {
+  #image {
+    max-width: 40%;
+  }
