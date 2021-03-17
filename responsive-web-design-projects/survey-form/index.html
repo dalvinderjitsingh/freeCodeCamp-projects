@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Turing Tribute Page</title>
+  </head>
+  
+  <body>
+    <h1><u>Add all the data types in the linkedin video</u></h1><br><br>
+    <h1 id="title">SURVEY FORM</h1>
+    <p id="description"> A generic survey form description.</p>
+    
+    <form id="survey-form"> 
+      <label id="name-label" for="name">Name:</label>
+      <input 
+             type="text" 
+             name="name"
+             id="name" 
+             placeholder="Enter your name" 
+             required/><br>
+      
+      <label id="email-label" for="email">Email:</label>
+      <input 
+             type="email" 
+             name="email"
+             id="email" 
+             placeholder="me@example.com" 
+             required/><br>
+      
+      <label id="number-label" for="age">Age:</label>
+      <input 
+             type="number"
+             name="age"
+             id="number"
+             min="10"
+             max="99"
+             placeholder="Age"/><br>
+      
+      <label for="dropdown">Dropdown Menu:</label>
+      <select id="dropdown" name="???">
+        <option disabled selected>Select One</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select><br>
+      
+      <fieldset>
+        <legend>Radio Buttons</legend>
+        <input name="user-recommend"
+               id="definitely"
+               value="definitely"
+               type="radio"
+               checked/>
+        <label for="definitely">Definitely</label>
+        <input name="user-recommend"
+               id="maybe"
+               value="maybe"
+               type="radio"/>
+        <label for="maybe">Maybe</label>
+        <input name="user-recommend"
+               id="not-sure"
+               value="not-sure"
+               type="radio"/>
+        <label for="not-sure">Not sure</label>
+      </fieldset><br>
+      
+      <fieldset>
+        <legend>Checkboxes</legend>
+        <input name="user-recommend"
+               id="definitely"
+               value="definitely"
+               type="checkbox"
+               checked/>
+        <label for="definitely">Definitely</label>
+        <input name="user-recommend"
+               id="maybe"
+               value="maybe"
+               type="checkbox"/>
+        <label for="maybe">Maybe</label>
+        <input name="user-recommend"
+               id="not-sure"
+               value="not-sure"
+               type="checkbox"/>
+        <label for="not-sure">Not sure</label>
+      </fieldset><br>
+      
+      <label for="comments">Text Area</label>
+        <textarea id="comments"
+                  name="comment"
+                  cols="30"
+                  rows="5"
+                  placeholder="Enter your comment here..."
+        ></textarea><br>
+      
+      <button type="submit" id="submit">Submit</button>
+        
+    </form>
+  </body>
+    
+  <footer> 
+  </footer>
+</html>
