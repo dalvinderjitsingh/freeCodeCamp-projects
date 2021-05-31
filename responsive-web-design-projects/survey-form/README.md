@@ -1,2 +1,6 @@
 # FCC: Survey Form
-Check out the pen I created at CodePen: https://codepen.io/dalvinderjitsingh/full/OJbaygY
+
+## Links
+
+- Live Site: [https://dalvinderjitsingh.github.io/freeCodeCamp-projects/responsive-web-design-projects/survey-form] (https://dalvinderjitsingh.github.io/freeCodeCamp-projects/responsive-web-design-projects/survey-form)
+- CodePen Pen: [https://codepen.io/dalvinderjitsingh/full/OJbaygY] (https://codepen.io/dalvinderjitsingh/full/OJbaygY)
