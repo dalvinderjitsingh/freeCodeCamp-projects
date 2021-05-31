@@ -1,78 +1,101 @@
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Landing page for the new James Bond 007 movie No Time To Die">
-    <title>No Time To Die Movie Landing Page</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif&display=swap" rel="stylesheet">
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing page for a movie titled No Time To Die, made for FreeCodeCamp Responsive Web Design project.">
+  <title>No Time To Die Movie Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif&display=swap" rel="stylesheet">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script>
+    /* Hide Menu on Scroll 
+    https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp */
+
+    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav-bar").style.top = "0";
+      } else {
+        document.getElementById("nav-bar").style.top = "-102px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+</head>
+
+<body>
+  <!--NAVIGATION BAR-->
+  <header id="header">
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link nav-a" href="#headline">BUY TICKETS</a></li> 
+        <li><a class="nav-link nav-a" href="#details">DETAILS</a></li>
+        <li><a class="nav-a" href="https://www.007.com/no-time-to-die/" target="_blank">
+              <div class="logo">
+                    <img id="header-img" class="white-img" src="https://www.007.com/wp-content/uploads/2019/11/nttd-logo.png" alt="No time to die logo" width="auto" height="100px"/> 
+                    <img class="black-img" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/No_Time_to_Die.svg" width="auto" height="100px"/>
+              </div></a></li>
+        <li><a class="nav-link nav-a" href="#video">TRAILER</a></li>
+        <li><a class="nav-a" href="https://www.007.com" target="_blank">OFFICIAL SITE</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--BACKGROUND VIDEO-->
+  <div class="background-video-container">  
+    <iframe class="background-video" src="https://player.vimeo.com/video/377316381?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&controls=0" width="" height="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  </div>  
+
+  <!--HEADLINE-->
+  <div id="headline">
+    <h1>COMING SOON <br> OCTOBER 2021</h1>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <label id="email-label" for="email">Buy Tickets:</label> 
+        <input id="email" 
+                type="email" 
+                name="email"
+                placeholder="email@example.com" 
+                required/>
+          <input id="submit" type="submit" value="SUBMIT">
+    </form>
+  </div>
+
+  <!--Details-->
+  <div id="details">
+    <h2>DETAILS</h2>
+    <div class="details-flex">
+      <img class="bond-img" src="https://www.007.com/wp-content/uploads/2021/03/UK-640x948.jpg" width="100%" height="100%"/>
+      <div class="content-container">
+        <section class="synopsis">
+          <p class="sub-heading">Synopsis</p>
+            <p>In <i>No Time To Die</i>, Bond (Daniel Craig) has left active service and is enjoying a tranquil life in Jamaica.  His peace is short-lived when his old friend Felix Leiter (Jeffrey Wright) from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.</p>
+        </section>
+
+        <section class="info">
+          <p class="sub-heading">Info</p>
+            <p><b>Release Date:</b>  In Cinemas October 1 | Previews September 30</p>
+            <p><b>Director:</b>  Cary Joji Fukunaga</p>
+            <p><b>Cast:</b>  Daniel Craig, Rami Malek, Léa Seydoux, Lashana Lynch, Ben Whishaw, Naomie Harris, Jeffrey Wright, Christoph Waltz, Ralph Fiennes, Ana de Armas, Billy Magnussen, Rory Kinnear, David Dencik, Dali Benssalah</p>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!--TRAILER-->
+  <div class="background-color-wrapper">
+    <div id="trailer">
+      <h3>TRAILER</h3>
+      <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/vw2FOYjCz38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
   
-  <body>
-    <!--NAVIGATION BAR-->
-    <header id="header">
-      <nav id="nav-bar">
-        <ul>
-          <li><a class="nav-link" href="#headline">BUY TICKETS</a></li> 
-          <li><a class="nav-link" href="#details">DETAILS</a></li>
-          <li><a href="https://www.007.com/no-time-to-die/" target="_blank">
-                <div class="logo">
-                     <img id="header-img" class="white-img" src="https://www.007.com/wp-content/uploads/2019/11/nttd-logo.png" alt="No time to die logo" width="auto" height="100px"/> 
-                     <img class="black-img" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/No_Time_to_Die.svg" width="auto" height="100px"/>
-                </div></a></li>
-          <li><a class="nav-link" href="#video">TRAILER</a></li>
-          <li><a href="https://www.007.com" target="_blank">OFFICIAL SITE</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!--VIDEO-->
-    <div class="background-video-container">  
-      <iframe class="background-video" src="https://player.vimeo.com/video/377316381?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&controls=0" width="" height="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-    </div>  
-
-    <!--HEADLINE-->
-    <div id="headline">
-      <h1>COMING SOON <br> 1st OCTOBER 2021</h1>
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <label id="email-label" for="email">Buy Tickets:</label> 
-          <input id="email" 
-                 type="email" 
-                 name="email"
-                 placeholder="email@example.com" 
-                 required/>
-            <input id="submit" type="submit" value="SUBMIT">
-      </form>
-    </div>
-
-    <!--Details-->
-    <div id="details">
-      <h2>DETAILS</h2>
-      <div class="details-flex">
-        <img class="bond-img" src="https://www.007.com/wp-content/uploads/2021/03/UK-640x948.jpg" width="100%" height="100%"/>
-        <div class="content-container">
-          <section class="synopsis">
-            <p><span class="sub-heading">Synopsis</span></p>
-              <p>In <i>No Time To Die</i>, Bond (Daniel Craig) has left active service and is enjoying a tranquil life in Jamaica.  His peace is short-lived when his old friend Felix Leiter (Jeffrey Wright) from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.</p>
-          </section>
-
-          <section class="info">
-            <p><span class="sub-heading">Info</span></p>
-              <p><b>Release Date:</b>  In Cinemas October 1 | Previews September 30</p>
-              <p><b>Director:</b>  Cary Joji Fukunaga</p>
-              <p><b>Cast:</b>  Daniel Craig, Rami Malek, Léa Seydoux, Lashana Lynch, Ben Whishaw, Naomie Harris, Jeffrey Wright, Christoph Waltz, Ralph Fiennes, Ana de Armas, Billy Magnussen, Rory Kinnear, David Dencik, Dali Benssalah</p>
-          </section>
-        </div>
-      </div>
-    </div>
-
-    <!--TRAILER-->
-    <div class="background-color-wrapper">
-      <div id="trailer">
-        <h3>TRAILER</h3>
-        <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/vw2FOYjCz38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-  </body>
+<!--FOOTER-->
+  <footer>
+    <small>Content and media source: <a id="source-btn" href="https://www.007.com/no-time-to-die" target="_blank">007</a></small>
+  </footer>
+</body>
 </html>
