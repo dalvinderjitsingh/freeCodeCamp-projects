@@ -1,0 +1,102 @@
+/* GLOBAL */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: black;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.6rem; /* 16px */
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dadce0;
+  max-width: 660px;
+  min-width: 340px;
+  margin: 0 auto;
+}
+
+#projects h1 {
+  font-family: "Noto Serif", serif;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+  margin: 0 0 5rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, 300px);
+}
+
+.project-tile {
+  background: white;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  border-radius: 4px;
+  padding: 0 0 1rem;
+  transition: transform 0.3s ease;
+}
+
+#projects img {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-bottom: 1px solid #e8eaed;
+}
+
+.project-tile:hover {
+  transform: scale(1.01);
+}
+
+.project-title {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  padding-top: 1rem;
+  color: #5f6368;
+}
+
+.project-tile:hover > .project-title {
+  color: black;
+}
+
+#projects h2 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  padding: 2rem 0;
+  border-top: solid 1px black;
+}
