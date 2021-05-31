@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -11,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.8rem; /* 18px */
   font-weight: 400;
   line-height: 1.5;
@@ -30,7 +32,7 @@ a {
 #grid-parent {
   display: grid;
   grid-template-rows: 100vh auto auto;
-} 
+}
 
 img {
   display: block;
@@ -48,7 +50,7 @@ img {
   left: 0;
   width: 100%;
   background: white;
-/*   border-bottom: 1px solid #e8eaed; */
+  /*   border-bottom: 1px solid #e8eaed; */
   transition: top 0.3s;
   z-index: 10;
   box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
@@ -62,14 +64,14 @@ img {
 #navbar a {
   display: block;
   font-size: 1.8rem;
-  padding: 2rem; 
+  padding: 2rem;
   color: #5f6368;
 }
 
 #navbar a:hover {
   color: darkblue;
   border-bottom: 1px solid darkblue;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 /* WELCOME SECTION */
@@ -78,15 +80,22 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 2rem;
-  align-items: center; 
+  padding: 15rem 2rem 15rem;
+  align-items: center;
   width: 100%;
   background-color: white;
   color: black;
+  background-size: 24px 24px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(0, 0, 255, 0.1) 1px, transparent 1px);
 }
 
 #welcome-section h1 {
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
   font-size: 6rem;
   font-weight: 700;
   text-align: center;
@@ -103,14 +112,14 @@ img {
 /* PROJECTS SECTION */
 
 #projects {
-  text-align: center; 
+  text-align: center;
   padding: 10rem 2rem 15rem;
   background-color: #f8f9fa;
   border-top: 1px solid #dadce0;
 }
 
 #projects h2 {
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
   font-size: 4rem;
   font-weight: 700;
   text-align: center;
@@ -138,9 +147,10 @@ img {
   border-bottom: 1px solid #e8eaed;
 }
 
-.project-tile { 
+.project-tile {
   background: white;
-  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
   border-radius: 4px;
   padding: 0 0 2rem;
   transition: transform 0.3s ease;
@@ -162,6 +172,24 @@ img {
   color: darkblue;
 }
 
+/* BLOG POST SECTION */
+
+#blog-post {
+  text-align: center;
+  padding: 10rem 2rem 15rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dadce0;
+}
+
+#blog-post h2 {
+  font-family: "Source Serif Pro", serif;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  margin: 0 auto 6rem auto;
+}
+
 /* CONTACT SECTION */
 
 #contact {
@@ -174,10 +202,18 @@ img {
   padding: 10rem 2rem 15rem;
   background: white;
   border-top: 1px solid #dadce0;
+  border-bottom: 1px solid #dadce0;
+  background-size: 24px 24px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(0, 0, 255, 0.1) 1px, transparent 1px);
 }
 
 #contact h3 {
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
   font-size: 4rem;
   font-weight: 700;
   text-align: center;
@@ -200,7 +236,7 @@ img {
 .contact-details {
   font-size: 3rem;
   font-weight: 200;
-  padding: 2rem; 
+  padding: 2rem;
   color: #5f6368;
 }
 
@@ -208,21 +244,21 @@ img {
   color: darkblue;
   border-bottom: 1px solid darkblue;
   padding-bottom: 1rem;
-  text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  text-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-
 
 /* SCROLL TO TOP BUTTON */
 
 .btn-container {
-  width: 95%; 
+  width: 95%;
   margin-bottom: 5%;
+  margin-top: 5%;
   display: flex;
   justify-content: flex-end;
 }
 
 .scroll-to-top-btn {
-/* position: fixed;
+  /* position: fixed;
   bottom: 40px;
   right: 40px; */
   z-index: 80;
@@ -231,9 +267,9 @@ img {
   align-items: center;
   vertical-align: middle;
   text-align: center;
-  height: 56px; 
+  height: 56px;
   width: 56px;
-  min-width: 0; 
+  min-width: 0;
   line-height: 56px;
   margin: 0em;
   padding: 1px 6px;
@@ -250,13 +286,13 @@ img {
   align-items: center;
   cursor: pointer;
   color: #5f6368;
-  font-size: 14px; 
+  font-size: 14px;
   padding: 20px;
   border-radius: 50%;
 }
 
 .scroll-to-top-btn:hover {
-  background: rgba(95,99,104,.04);
+  background: rgba(95, 99, 104, 0.04);
   border-bottom: 1px solid darkblue;
 }
 
