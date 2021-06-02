@@ -6,14 +6,55 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Noto+Sans&family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        /* Hide Menu on Scroll */
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-102px";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+    </script>
     <title>Document</title>
 </head>
 <body>
 
+    <!-- START NAVBAR --> 
+    <header id="navbar">
+        <div class="nav-wrapper">
+            <nav class="nav-flex">
+                <ul>
+                    <li>
+                        <a href="https://dalvinderjitsingh.github.io/" 
+                        target="_blank">Dalvinderjit Singh</a>
+                    </li>
+                </ul>
+        
+                <ul class="header-nav-right-items">
+                    <li class="nav-item-padding">
+                        <a href="https://dalvinderjitsingh.github.io/projects"
+                        target="_blank">Projects</a>
+                    </li>
+                    <li>
+                        <a href="https://dalvinderjitsingh.github.io/blog"
+                        target="_blank">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        
+    <!-- END NAVBAR -->
+
     <!-- START PROJECTS SECTION -->
 
     <section id="projects">
-        <h1>My FreeCodeCamp Projects</h2>
+        <h1>My freeCodeCamp Projects</h2>
         
         <!-- START RWD Projects -->
 
@@ -21,80 +62,130 @@
         <div class="projects-grid">
 
             <a 
-                href="https://codepen.io/dalvinderjitsingh/full/eYBLrYj"
+                href="https://dalvinderjitsingh.github.io/freeCodeCamp-projects/responsive-web-design-projects/tribute-page/"
                 target="_blank"
                 class="project-tile"
             >
                 <img 
                     class="project-image" 
                     src="./responsive-web-design-projects/screenshots/tribute-page.png"
-                    alt="project"
+                    alt="Screenshot of the project."
                 />
                 <p class="project-title">Tribute Page</p>
             </a>
 
 
             <a 
-                href="https://codepen.io/dalvinderjitsingh/full/OJbaygY"
+                href="https://dalvinderjitsingh.github.io/freeCodeCamp-projects/responsive-web-design-projects/survey-form/"
                 target="_blank"
                 class="project-tile"
             >
                 <img 
                     class="project-image" 
                     src="./responsive-web-design-projects/screenshots/survey-form.png"
-                    alt="project"
+                    alt="Screenshot of the project."
                 />
                 <p class="project-title">Survey Form</p>
             </a>
 
 
             <a 
-                href="https://codepen.io/dalvinderjitsingh/full/MWbMezB"
+                href="https://dalvinderjitsingh.github.io/freeCodeCamp-projects/responsive-web-design-projects/product-landing-page/"
                 target="_blank"
                 class="project-tile"
             >
                 <img 
                     class="project-image" 
                     src="./responsive-web-design-projects/screenshots/product-landing-page.png"
-                    alt="project"
+                    alt="Screenshot of the project."
                 />
                 <p class="project-title">Product Landing Page</p>
             </a>
 
 
             <a 
-                href="https://codepen.io/dalvinderjitsingh/full/gOLNNMO"
+                href="https://dalvinderjitsingh.github.io/freeCodeCamp-projects/responsive-web-design-projects/technical-documentation-page/"
                 target="_blank"
                 class="project-tile"
             >
                 <img 
                     class="project-image" 
-                    src="./responsive-web-design-projects/screenshots/technical-doc-page.png"
-                    alt="project"
+                    src="./responsive-web-design-projects/screenshots/technical-documentation-page.png"
+                    alt="Screenshot of the project."
                 />
                 <p class="project-title">Technical Documentation Page</p>
             </a>
 
 
             <a 
-            href="https://codepen.io/dalvinderjitsingh/full/JjEQRaZ"
-            target="_blank"
-            class="project-tile"
-        >
-            <img 
-                class="project-image" 
-                src="./responsive-web-design-projects/screenshots/portfolio-webpage.png"
-                alt="project"
-            />
-            <p class="project-title">Portfolio Webpage</p>
-        </a>
+                href="https://dalvinderjitsingh.github.io/freeCodeCamp-projects/responsive-web-design-projects/personal-portfolio-webpage/"
+                target="_blank"
+                class="project-tile"
+            >
+                <img 
+                    class="project-image" 
+                    src="./responsive-web-design-projects/screenshots/personal-portfolio-webpage.png"
+                    alt="Screenshot of the project."
+                />
+                <p class="project-title">Portfolio Webpage</p>
+            </a>
         </div>
 
         <!-- END RWD PROJECTS -->
         
     </section>
       
-  <!-- END PROJECTS SECTION -->
+    <!-- END PROJECTS SECTION -->
+
+    <!-- START FOOTER -->
+
+    <footer>
+        <div class="nav-wrapper">
+            <nav class="nav-flex">
+                <ul>
+                    <li>
+                        <p><u>Project Details</u></p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/dalvinderjitsingh/freeCodeCamp-projects"
+                        target="_blank"><i class="fa fa-github"></i> Source Code</a>
+                    </li>
+                    <li>
+                        <a href="https://codepen.io/collection/LPPzOB"
+                        target="_blank"><i class="fa fa-codepen"></i> CodePen Collection</a>
+                    </li>
+                    <li>
+                        <a href="https://www.freecodecamp.org/dalvinderjit-singh"
+                        target="_blank"><i class="fa fa-free-code-camp"></i> FCC Profile Page</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p><u>Social Links</u></p>
+                    </li>
+                    <li>
+                        <a  href="https://github.com/dalvinderjitsingh"
+                        target="_blank"
+                        class="btn contact-details"><i class="fa fa-github"></i> GitHub</a>
+                    </li>
+                    <li>
+                        <a  href="https://www.linkedin.com/in/dalvinderjit-singh-a40b511b7/"
+                        target="_blank"
+                        class="btn contact-details"
+                        ><i class="fa fa-linkedin"></i> LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/dalvinderjit01"
+                        target="_blank"
+                        class="btn contact-details"
+                        ><i class="fa fa-twitter"></i> Twitter</a>    
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- END FOOTER -->
 
 </body>
 </html>
