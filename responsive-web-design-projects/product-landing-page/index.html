@@ -9,11 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif&display=swap" rel="stylesheet">
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <script>
-    /* Hide Menu on Scroll 
-    https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp */
-
-    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-
+    /* Hide Menu on Scroll */
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
@@ -32,15 +28,15 @@
   <header id="header">
     <nav id="nav-bar">
       <ul>
-        <li><a class="nav-link nav-a" href="#headline">BUY TICKETS</a></li> 
-        <li><a class="nav-link nav-a" href="#details">DETAILS</a></li>
+        <li><a class="nav-link nav-a" href="#headline">Buy Tickets</a></li> 
+        <li><a class="nav-link nav-a" href="#details">Details</a></li>
         <li><a class="nav-a" href="https://www.007.com/no-time-to-die/" target="_blank">
               <div class="logo">
-                    <img id="header-img" class="white-img" src="https://www.007.com/wp-content/uploads/2019/11/nttd-logo.png" alt="No time to die logo" width="auto" height="100px"/> 
-                    <img class="black-img" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/No_Time_to_Die.svg" width="auto" height="100px"/>
+                    <img id="header-img" class="white-img" src="https://www.007.com/wp-content/uploads/2019/11/nttd-logo.png" alt="No time to die logo" width="auto" height="80px"/> 
+                    <img class="black-img" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/No_Time_to_Die.svg" width="auto" height=80px"/>
               </div></a></li>
-        <li><a class="nav-link nav-a" href="#video">TRAILER</a></li>
-        <li><a class="nav-a" href="https://www.007.com" target="_blank">OFFICIAL SITE</a></li>
+        <li><a class="nav-link nav-a" href="#video">Trailer</a></li>
+        <li><a class="nav-a" href="https://www.007.com" target="_blank">Official Site</a></li>
       </ul>
     </nav>
   </header>
@@ -52,7 +48,7 @@
 
   <!--HEADLINE-->
   <div id="headline">
-    <h1>COMING SOON <br> OCTOBER 2021</h1>
+    <h1>Coming Soon<br>October 2021</h1>
     <form id="form" action="https://www.freecodecamp.com/email-submit">
       <label id="email-label" for="email">Buy Tickets:</label> 
         <input id="email" 
@@ -66,7 +62,7 @@
 
   <!--Details-->
   <div id="details">
-    <h2>DETAILS</h2>
+    <h2>Details</h2>
     <div class="details-flex">
       <img class="bond-img" src="https://www.007.com/wp-content/uploads/2021/03/UK-640x948.jpg" width="100%" height="100%"/>
       <div class="content-container">
@@ -88,7 +84,7 @@
   <!--TRAILER-->
   <div class="background-color-wrapper">
     <div id="trailer">
-      <h3>TRAILER</h3>
+      <h3>Trailer</h3>
       <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/vw2FOYjCz38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
