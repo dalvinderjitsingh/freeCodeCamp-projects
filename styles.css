@@ -17,40 +17,35 @@ html {
 body {
   background-color: white;
   color: #202124;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* BASE STYLES */
 
 h1 {
-  color: #202124;
-  font: 400 3rem "Noto Serif", serif;
-  letter-spacing: -0.025rem;
+  font: 500 3rem "Roboto", sans-serif;
 }
 
 h2 {
-  color: #202124;
-  font: 400 2.5rem "Noto Sans", sans-serif;
-  letter-spacing: -0.025rem;
+  font: 400 2.5rem "Roboto", sans-serif;
 }
 
 h3 {
   color: #5f6368;
-  font: 400 1.8rem "Noto Sans", sans-serif;
-  letter-spacing: -0.025rem;
+  font: 400 2rem "Roboto", sans-serif;
 }
 
-h4,
+h4 {
+  font: 500 1.6rem "Roboto", sans-serif;
+}
+
 p {
-  color: #202124;
-  font: 400 1.6rem "Noto Sans", sans-serif;
-  letter-spacing: 0;
+  font: 400 1.6rem "Roboto", sans-serif;
 }
 
 a {
   color: #5f6368;
-  font: 400 1.4rem "Noto Sans", sans-serif;
-  letter-spacing: 0.025rem;
+  font: 400 1.4rem "Roboto", sans-serif;
   text-decoration: none;
 }
 
@@ -101,7 +96,7 @@ header {
   justify-content: space-between;
 }
 
-.header-nav-right-ul {
+.nav-right-side-ul {
   display: flex;
   flex-direction: row;
 }
@@ -110,11 +105,12 @@ header a {
   display: block;
   padding: 1.4rem 1.5rem;
   font-weight: 500;
+  letter-spacing: 0.025rem;
 }
 
 /* PROJECTS SECTION */
 
-#projects {
+.projects-section {
   max-width: 1000px;
   min-width: 350px;
   margin: 0 auto;
@@ -126,17 +122,19 @@ header a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2.5rem;
-  margin-bottom: 5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: solid 1px #dadce0;
+  margin-bottom: 3rem;
 }
 
-#projects h1 {
-  margin: 7.7rem 0 3rem;
+.projects-section h1 {
+  margin: 7.7rem 0 2.5rem;
+  padding-bottom: 3rem;
+  border-bottom: solid 1px #dadce0;
 }
 
-#projects h2 {
-  padding-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  border-top: solid 1px #dadce0;
+.projects-section h2 {
+  margin: 2.5rem 0;
 }
 
 .project-tile {
@@ -157,7 +155,7 @@ header a {
   color: #202124;
 }
 
-#projects img {
+.projects-section img {
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
   border-bottom: 1px solid #dadce0;
@@ -170,22 +168,24 @@ header a {
 /* FOOTER */
 
 footer {
+  margin-top: 5rem;
   border-top: 1px solid #dadce0;
   border-bottom: 1px solid #dadce0;
-  padding: 5rem 0;
+  padding: 3.2rem 0;
   background-color: #f8f9fa;
 }
 
 footer li {
-  margin-bottom: 1.8rem;
+  margin: 1.8rem 0;
 }
 
-.footer-heading-li {
-  margin-bottom: 0.85rem;
+.footer-heading-1 {
+  margin-bottom: 2px;
+  font-weight: 900;
+  color: #202124;
 }
 
-.footer-heading {
-  padding-bottom: 0.85rem;
-  border-bottom: solid 1px #dadce0;
-  width: max-content;
+.brand-ul,
+.details-ul {
+  margin-right: 3rem;
 }
