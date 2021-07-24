@@ -15,6 +15,9 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
   background-color: white;
   color: #202124;
   font-family: "Roboto", sans-serif;
@@ -23,35 +26,45 @@ body {
 /* BASE STYLES */
 
 h1 {
-  font: 500 3rem "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 3.2rem;
 }
 
 h2 {
-  font: 400 2.5rem "Roboto", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
 }
 
 h3 {
-  color: #5f6368;
-  font: 400 2rem "Roboto", sans-serif;
+  font-size: 2rem;
 }
 
 h4 {
-  font: 500 1.6rem "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+h6 {
+  font-size: 1.2rem;
 }
 
 p {
-  font: 400 1.6rem "Roboto", sans-serif;
+  font-size: 1.6rem;
 }
 
 a {
   color: #5f6368;
-  font: 400 1.4rem "Roboto", sans-serif;
+  font-size: 1.4rem;
   text-decoration: none;
 }
 
 a:hover {
   background-color: #f6f6f6;
   color: #202124;
+  text-decoration: underline;
 }
 
 ul {
@@ -124,7 +137,6 @@ header a {
   grid-gap: 2.5rem;
   padding-bottom: 2.5rem;
   border-bottom: solid 1px #dadce0;
-  margin-bottom: 3rem;
 }
 
 .projects-section h1 {
@@ -147,6 +159,7 @@ header a {
 
 .project-tile:hover {
   background-color: white;
+  text-decoration: none;
   transform: translateY(-1px);
   box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
 }
@@ -163,6 +176,9 @@ header a {
 
 .project-title {
   padding-top: 1rem;
+  color: #5f6368;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 /* FOOTER */
@@ -173,6 +189,13 @@ footer {
   border-bottom: 1px solid #dadce0;
   padding: 3.2rem 0;
   background-color: #f8f9fa;
+}
+
+footer h4,
+.name {
+  color: #202124;
+  font-weight: 500;
+  font-size: 1.6rem;
 }
 
 footer li {
