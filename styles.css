@@ -133,7 +133,7 @@ header a {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(301px, 1fr));
   grid-gap: 2.5rem;
   padding-bottom: 2.5rem;
   border-bottom: solid 1px #dadce0;
