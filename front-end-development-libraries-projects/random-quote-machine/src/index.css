@@ -1,0 +1,17 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background-color: #cfe2ff;
+  background-image: radial-gradient(#cfe2ff, #0d6efd);
+}
+
+.card {
+  max-width: 500px;
+}
+
+.card-header,
+.card-footer {
+  background-color: #cfe2ff;
+}
