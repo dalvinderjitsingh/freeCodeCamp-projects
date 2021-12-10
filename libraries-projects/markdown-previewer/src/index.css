@@ -1,0 +1,21 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ol {
+    list-style: decimal;
+  }
+
+  ul {
+    list-style: disc;
+  }
+}
+
+@layer utilities {
+  /* To erase the tab's bottom shadow */
+  .clip-path-inset {
+    clip-path: inset(-5px -5px 0px -5px);
+  }
+}
