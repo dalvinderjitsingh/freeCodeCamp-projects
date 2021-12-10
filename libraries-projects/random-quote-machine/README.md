@@ -30,7 +30,7 @@ Build a Random Quote Machine.
 ### Links
 
 - Live Site: [https://dalvinderjitsingh.github.io/random-quote-machine/](https://dalvinderjitsingh.github.io/random-quote-machine)
-- Code: [https://github.com/dalvinderjitsingh/random-quote-machine](https://github.com/dalvinderjitsingh/random-quote-machine)
+- Codebase: [https://github.com/dalvinderjitsingh/freeCodeCamp-projects/tree/main/libraries-projects/random-quote-machine](https://github.com/dalvinderjitsingh/freeCodeCamp-projects/tree/main/libraries-projects/random-quote-machine)
 - CodePen Pen: [https://codepen.io/dalvinderjitsingh/pen/OJjBZEX](https://codepen.io/dalvinderjitsingh/pen/OJjBZEX)
 
 ## My process
