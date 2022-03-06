@@ -1,4 +1,4 @@
-# freeCodeCamp - Markdown Previewer
+# freeCodeCamp - Drum Machine
 
 This is a solution to the [Build a Drum Machine](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-drum-machine) project from [freeCodeCamp](https://www.freecodecamp.org/).
 
