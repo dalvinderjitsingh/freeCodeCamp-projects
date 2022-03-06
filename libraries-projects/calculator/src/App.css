@@ -1,0 +1,243 @@
+@import "open-props/style";
+@import "open-props/normalize";
+
+body {
+  background-color: var(--gray-0);
+  font-family: "Rubik", var(--font-sans);
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.calculator-wrapper {
+  padding: var(--size-2);
+}
+
+.calculator-edge {
+  padding-bottom: var(--size-3);
+  background: linear-gradient(
+    to left,
+    var(--gray-5) 0%,
+    var(--gray-4) 8%,
+    var(--gray-4) 92%,
+    var(--gray-5) 100%
+  );
+  border-bottom: var(--border-size-1) solid var(--gray-5);
+  border-radius: var(--radius-3);
+  box-shadow: var(--shadow-6);
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, var(--size-9));
+  grid-template-rows: minmax(7rem, auto) repeat(5, auto);
+  gap: var(--size-2);
+  background-color: var(--gray-4);
+  background-image: linear-gradient(
+    var(--gray-4),
+    var(--gray-4),
+    var(--gray-3)
+  );
+  padding: var(--size-5);
+  border: var(--border-size-1) solid var(--gray-4);
+  border-radius: var(--radius-3);
+}
+
+.output {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  word-wrap: break-word;
+  word-break: break-all;
+  background-color: var(--gray-8);
+  padding: var(--size-2) var(--size-3) 0;
+  margin-bottom: var(--size-2);
+  border-radius: var(--radius-2);
+}
+
+.output .previous-operand {
+  color: var(--gray-4);
+}
+
+.output .current-operand {
+  color: var(--gray-0);
+  font-size: var(--font-size-6);
+}
+
+/* 3D BUTTON 
+From: www.joshwcomeau.com/animation/3d-button
+------------ */
+.pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+}
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+.edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    var(--gray-4) 0%,
+    var(--gray-3) 8%,
+    var(--gray-3) 92%,
+    var(--gray-4) 100%
+  );
+}
+.front {
+  display: block;
+  position: relative;
+  padding: var(--size-1) 0;
+  border-radius: 12px;
+  font-size: var(--font-size-3);
+  color: var(--gray-8);
+  background: var(--gray-0);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+
+  border: var(--border-size-1) solid var(--gray-1);
+
+  background-image: linear-gradient(var(--gray-1), var(--gray-0));
+}
+.pushable:hover {
+  filter: brightness(105%);
+}
+.pushable:hover .front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+.pushable:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+.pushable:hover .shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+.pushable:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+.pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* BUTTON COLORS  */
+
+/* All Clear Btn */
+.ac-btn .front {
+  background-image: linear-gradient(var(--red-2), var(--red-1));
+  border: var(--border-size-1) solid var(--red-2);
+}
+
+.ac-btn .edge {
+  background: linear-gradient(
+    to left,
+    var(--red-3) 0%,
+    var(--red-2) 8%,
+    var(--red-2) 92%,
+    var(--red-3) 100%
+  );
+}
+
+/* Clear Last Entry Btn */
+.ce-btn .front {
+  background-image: linear-gradient(var(--orange-2), var(--orange-1));
+  border: var(--border-size-1) solid var(--orange-2);
+}
+
+.ce-btn .edge {
+  background: linear-gradient(
+    to left,
+    var(--orange-3) 0%,
+    var(--orange-2) 8%,
+    var(--orange-2) 92%,
+    var(--orange-3) 100%
+  );
+}
+
+/* Delete Btn */
+.del-btn .front {
+  background-image: linear-gradient(var(--yellow-2), var(--yellow-1));
+  border: var(--border-size-1) solid var(--yellow-2);
+}
+
+.del-btn .edge {
+  background: linear-gradient(
+    to left,
+    var(--yellow-3) 0%,
+    var(--yellow-2) 8%,
+    var(--yellow-2) 92%,
+    var(--yellow-3) 100%
+  );
+}
+
+/* Math Operation Btn */
+.math-opp-btn .front {
+  background-image: linear-gradient(var(--green-2), var(--green-1));
+  border: var(--border-size-1) solid var(--green-2);
+}
+
+.math-opp-btn .edge {
+  background: linear-gradient(
+    to left,
+    var(--green-3) 0%,
+    var(--green-2) 8%,
+    var(--green-2) 92%,
+    var(--green-3) 100%
+  );
+}
+
+/* Equals Btn */
+.equals-btn .front {
+  background-image: linear-gradient(var(--blue-2), var(--blue-1));
+  border: var(--border-size-1) solid var(--blue-2);
+}
+
+.equals-btn .edge {
+  background: linear-gradient(
+    to left,
+    var(--blue-3) 0%,
+    var(--blue-2) 8%,
+    var(--blue-2) 92%,
+    var(--blue-3) 100%
+  );
+}
+
+/* 3D BUTTON END
+---------------- */
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 375px) {
+  .calculator {
+    padding: var(--size-3);
+    grid-template-columns: repeat(4, var(--size-8));
+  }
+}
