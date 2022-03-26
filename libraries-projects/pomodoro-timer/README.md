@@ -33,13 +33,6 @@ Build a 25 + 5 Clock.
 
 ## My process
 
-### Built with
-
-- HTML, CSS, JavaScript
-- [React](https://reactjs.org/)
-- [Create React App](https://create-react-app.dev/)
-- [Open Props](https://open-props.style/)
-
 ### What I learned
 
 While working through this project, I practiced using React and Open Props.
