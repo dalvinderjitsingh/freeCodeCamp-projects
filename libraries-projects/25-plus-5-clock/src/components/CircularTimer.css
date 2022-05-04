@@ -1,0 +1,98 @@
+/* Resets an svg style set in open-props/normalize which clashed with progress indicator's style */
+:where(svg):where(:not([width])) {
+  inline-size: initial;
+}
+
+.base-timer-wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.base-timer {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: var(--size-fluid-1) 0 var(--size-fluid-2);
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 9px;
+  stroke: var(--gray-7);
+  filter: drop-shadow(-3px 3px 0 var(--gray-9));
+}
+
+.base-timer__path-remaining {
+  stroke-width: 8px;
+  stroke-linecap: square;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: var(--green-7);
+}
+
+.base-timer__path-remaining.yellow {
+  color: var(--yellow-7);
+}
+
+.base-timer__path-remaining.red {
+  color: var(--red-7);
+}
+
+.base-timer__time-left,
+.base-timer__timer-label {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.base-timer__time-left {
+  font-size: var(--font-size-8);
+}
+
+.base-timer__timer-label {
+  color: var(--gray-9);
+  font-size: var(--font-size-3);
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+@media only screen and (max-width: 360px) {
+  .base-timer {
+    width: 200px;
+    height: 200px;
+    margin: 0 0 var(--size-fluid-1);
+  }
+
+  .base-timer__time-left,
+  .base-timer__timer-label {
+    width: 200px;
+    height: 200px;
+  }
+
+  .base-timer__time-left {
+    font-size: var(--font-size-6);
+  }
+
+  .base-timer__timer-label {
+    font-size: var(--font-size-2);
+    margin-top: 45px;
+  }
+}

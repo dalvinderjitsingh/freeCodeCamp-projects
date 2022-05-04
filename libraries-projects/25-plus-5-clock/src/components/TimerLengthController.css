@@ -1,0 +1,84 @@
+.timer-length-controllers-wrapper {
+  display: flex;
+  border: var(--border-size-2) solid var(--gray-9);
+  border-radius: var(--radius-3);
+  box-shadow: 6px 6px 0 0 var(--gray-9);
+  margin-bottom: var(--size-fluid-3);
+}
+
+.controller-wrapper {
+  flex: 1;
+  padding: var(--size-fluid-1);
+}
+
+/* .break-controller-wrapper {
+  border-left: var(--border-size-2) solid var(--gray-9);
+} */
+
+.controller-label {
+  font-size: var(--font-size-2);
+  white-space: nowrap;
+}
+
+.controller-label:first-letter {
+  text-transform: uppercase;
+}
+
+.controller-length {
+  font-size: var(--font-size-3);
+  font-weight: bold;
+  margin: 0 auto var(--size-1);
+}
+
+.controller-length::after {
+  content: " min";
+}
+
+/* Increment and Decrement buttons 
+---------------------------------- */
+.controller-btn-wrapper {
+  display: flex;
+  margin: 0 var(--size-2);
+  margin-left: 2px;
+  margin-right: -2px;
+}
+
+.material-icons-outlined.md-18 {
+  font-size: 18px;
+}
+
+.controller-btn {
+  flex: 1;
+}
+
+.controller-btn {
+  box-shadow: 2px 2px 0 0 var(--gray-9);
+  -webkit-transform: translate(-2px, -2px);
+  -ms-transform: translate(-2px, -2px);
+  transform: translate(-2px, -2px);
+}
+
+.decrement-btn {
+  margin-right: var(--size-2);
+}
+
+.disabled-btn {
+  background-color: var(--gray-7);
+  border-color: var(--gray-8);
+}
+
+.disabled-btn:active {
+  background-color: var(--gray-7);
+  box-shadow: 2px 2px 0 0 var(--gray-9);
+  -webkit-transform: translate(-2px, -2px);
+  -ms-transform: translate(-2px, -2px);
+  transform: translate(-2px, -2px);
+}
+/* End Increment and Decrement buttons 
+-------------------------------------- */
+
+@media only screen and (max-width: 360px) {
+  .controller-label {
+    font-size: var(--font-size-1);
+  }
+}
