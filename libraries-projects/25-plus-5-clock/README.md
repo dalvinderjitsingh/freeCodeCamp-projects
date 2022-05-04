@@ -11,6 +11,7 @@ This is a solution to the [Build a 25 + 5 Clock](https://www.freecodecamp.org/le
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -29,13 +30,26 @@ Build a 25 + 5 Clock.
 
 ### Links
 
-- Live Site: [https://dalvinderjitsingh.github.io/pomodoro-timer](https://dalvinderjitsingh.github.io/pomodoro-timer)
+- Live Site: [https://dalvinderjitsingh.github.io/25-plus-5-clock](https://dalvinderjitsingh.github.io/25-plus-5-clock)
 
 ## My process
 
+### Built with
+
+- HTML, CSS, JavaScript
+- [React](https://reactjs.org/)
+- [Create-React-App](https://create-react-app.dev/)
+- [Open Props](https://open-props.style/)
+- [Google Fonts](https://fonts.google.com/)
+- [Material Icons](https://fonts.google.com/icons)
+
 ### What I learned
 
-While working through this project, I practiced using React and Open Props.
+While working through this project, I learned how to create an animated countdown timer using React.
+
+### Useful resources
+
+- [How to Create an Animated Countdown Timer](https://css-tricks.com/how-to-create-an-animated-countdown-timer-with-html-css-and-javascript/) - This is a resource I'd recommend to anyone who wants to learn how to create an animated countdown timer with HTML, CSS and JavaScript.
 
 ## Author
 
